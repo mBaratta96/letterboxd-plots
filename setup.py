@@ -10,7 +10,7 @@ import subprocess
 import pathlib
 
 CURRENT_PYTHON_VERSION = sys.version_info[:2]
-MIN_REQUIRED_PYTHON_VERSION = (3, 7) # COMPATIBLE PYTHON VERSION
+MIN_REQUIRED_PYTHON_VERSION = (3, 8) # COMPATIBLE PYTHON VERSION
 if CURRENT_PYTHON_VERSION < MIN_REQUIRED_PYTHON_VERSION:
     sys.stderr.write("""
 ==========================
@@ -25,7 +25,7 @@ requirements = (pathlib.Path(__file__).parent / "requirements.txt").read_text().
 EXCLUDE_FROM_PACKAGES = []
 
 setup(
-    name='YOUR PROJECT NAME',
+    name='letterboxd-plots',
     version='0.0.0-prealpha',
     python_requires='>={}.{}'.format(*MIN_REQUIRED_PYTHON_VERSION),
     url='',
