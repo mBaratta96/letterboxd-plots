@@ -1,3 +1,6 @@
 scikit-learn==1.0.2
-letterboxd==0.3.0
+tmdbv3api==1.7.6
+python-dotenv==0.19.2
+pandas==1.4.1
+python-dotenv==0.19.2
 lxml==4.8.0
